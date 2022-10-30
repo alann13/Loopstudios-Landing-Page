@@ -1,3 +1,7 @@
+@import url('reset.css');
+@import url('fonts.css');
+@import url('system.css');
+
 h1 {
   font-family: 'Josefin Sans', sans-serif;
 }
