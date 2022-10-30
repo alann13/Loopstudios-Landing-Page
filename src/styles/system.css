@@ -1,0 +1,10 @@
+body {
+  --color-black: #000000;
+  --color-white: #ffffff;
+
+  --primary-font: 'Josefin Sans' sans-serif;
+  --secondary-font: 'Alata' sans-serif;
+
+  --desktop-content-mw: 69.375rem;
+  --mobile-content-mw: 20.3125rem;
+}
