@@ -2,9 +2,33 @@ body {
   --color-black: #000000;
   --color-white: #ffffff;
 
-  --primary-font: 'Josefin Sans' sans-serif;
-  --secondary-font: 'Alata' sans-serif;
+  --primary-font: 'Josefin Sans', sans-serif;
+  --secondary-font: 'Alata', sans-serif;
 
   --desktop-content-mw: 69.375rem;
-  --mobile-content-mw: 20.3125rem;
+}
+
+h1 {
+  font-family: var(--primary-font);
+}
+
+h2 {
+  font-family: var(--primary-font);
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: var(--secondary-font);
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 960px) {
+  h2 {
+    font-size: 2rem;
+  }
 }

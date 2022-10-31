@@ -2,10 +2,72 @@
 @import url('fonts.css');
 @import url('system.css');
 
-h1 {
-  font-family: 'Josefin Sans', sans-serif;
+main {
+  max-width: var(--desktop-content-mw);
+  margin: auto;
 }
 
-p {
-  font-family: 'Alata', sans-serif;
+main > * {
+  margin-top: 11.5rem;
+}
+
+.about-section {
+  position: relative;
+  display: flex;
+}
+
+.about-section .about-text-ctn {
+  background: var(--color-white);
+  bottom: 0;
+  max-width: 36rem;
+  padding-left: 6rem;
+  padding-top: 6rem;
+  position: absolute;
+  right: 0;
+  z-index: 10;
+}
+
+.about-text-ctn p {
+  margin-top: 1.5rem;
+  opacity: 0.5;
+}
+
+@media screen and (max-width: 960px) {
+  main {
+    max-width: 768px;
+    margin: auto;
+    padding-inline: 1rem;
+  }
+
+  main > * {
+    margin-top: 6rem;
+  }
+
+  .about-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about-section .about-text-ctn {
+    order: 2;
+    padding: 3rem 0 0;
+    position: unset;
+    text-align: center;
+    width: 100%;
+    z-index: 0;
+  }
+
+  .about-text-ctn p {
+    margin-top: 1rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  main {
+    padding-inline: 1.5rem;
+  }
+
+  .about-text-ctn p {
+    margin-inline: 1rem;
+  }
 }
