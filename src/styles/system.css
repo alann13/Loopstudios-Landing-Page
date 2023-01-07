@@ -9,7 +9,12 @@ body {
 }
 
 h1 {
+  border: 1px solid var(--color-white);
+  color: var(--color-white);
   font-family: var(--primary-font);
+  font-size: 4.5rem;
+  font-weight: 300;
+  line-height: 1;
 }
 
 h2 {

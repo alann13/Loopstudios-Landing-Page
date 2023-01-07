@@ -2,18 +2,51 @@
 @import url('fonts.css');
 @import url('system.css');
 
+header {
+  background: rgba(0, 0, 0, 0.4);
+  background-image: url('images/desktop/image-hero.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 40.625rem;
+  padding: 4rem calc((100% - var(--desktop-content-mw)) / 2) 0;
+}
+
+header > nav {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 8.125rem;
+}
+
+header > nav > ul {
+  display: flex;
+  align-items: center;
+}
+
+header > nav > ul > li > a {
+  color: white;
+  text-decoration: none;
+  font-family: var(--secondary-font);
+  margin-left: 2rem;
+}
+
+header h1 {
+  padding: 2.5rem;
+  max-width: 40.625rem;
+  text-transform: uppercase;
+}
+
 main {
   max-width: var(--desktop-content-mw);
   margin: auto;
-}
-
-main > * {
-  margin-top: 11.5rem;
+  margin-block: 10rem 11.5rem;
 }
 
 .about-section {
   position: relative;
   display: flex;
+  margin-bottom: 11.5rem;
 }
 
 .about-section .about-text-ctn {
@@ -30,6 +63,68 @@ main > * {
 .about-text-ctn p {
   margin-top: 1.5rem;
   opacity: 0.5;
+}
+
+footer {
+  background-color: #000000;
+  color: white;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 0;
+  justify-content: space-between;
+  padding: 2.75rem calc((100% - var(--desktop-content-mw)) / 2);
+}
+
+footer > * {
+  display: flex;
+  flex-basis: 50%;
+}
+
+footer > *:nth-child(even) {
+  justify-content: flex-end;
+}
+
+footer > .footer-logo {
+  max-width: 9rem;
+  height: 1.5rem;
+}
+
+footer > ul img {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-left: 1rem;
+}
+
+footer .links a {
+  color: inherit;
+  font-family: var(--secondary-font);
+  font-size: 0.9375rem;
+  margin-right: 2rem;
+  text-decoration: none;
+}
+
+footer > .copyright {
+  font-size: 0.9375rem;
+  opacity: 0.5;
+  font-family: var(--primary-font);
+}
+
+footer a {
+  position: relative;
+}
+
+footer a:hover:after {
+  content: '';
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  position: absolute;
+  background: white;
+  transform: translate(-50%, 0);
+  bottom: -0.5rem;
+  left: 50%;
+  width: 1.5rem;
+  height: 2px;
 }
 
 @media screen and (max-width: 960px) {
