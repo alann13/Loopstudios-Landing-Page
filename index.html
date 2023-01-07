@@ -12,8 +12,29 @@
     <title>loopstudios</title>
   </head>
   <body>
-    <h1>this is josefin sans</h1>
-    <p>This is Alata font</p>
+    <header>
+      <nav>
+        <img src="/images/logo.svg" alt="logo" />
+        <ul>
+          <li>
+            <a href="#">About</a>
+          </li>
+          <li>
+            <a href="#">Careers</a>
+          </li>
+          <li>
+            <a href="#">Events</a>
+          </li>
+          <li>
+            <a href="#">Products</a>
+          </li>
+          <li>
+            <a href="#">Support</a>
+          </li>
+        </ul>
+      </nav>
+      <h1>Immersive experience that deliver</h1>
+    </header>
     <main>
       <section class="about-section">
         <div class="about-text-ctn">
@@ -27,7 +48,73 @@
         </div>
         <img src="/image-interactive.jpg" alt="Male with a virtual headset." />
       </section>
+      <section>
+        <div>
+          <h2>our creations</h2>
+          <a href="#">see all</a>
+        </div>
+        <ul>
+          <li>
+            <a href="#">
+              <picture>
+                <source
+                  media="(max-width: 960px)"
+                  srcset="/images/mobile/image-deep-earth.jpg"
+                />
+                <img
+                  src="/images/desktop/image-deep-earth.jpg"
+                  alt="deep-earth"
+                />
+                <div>deep earth</div>
+              </picture>
+            </a>
+          </li>
+        </ul>
+      </section>
     </main>
+    <footer>
+      <img class="footer-logo" src="/images/logo.svg" alt="logo" />
+      <ul>
+        <li>
+          <a href="#">
+            <img src="/images/icon-facebook.svg" alt="facebook logo" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="/images/icon-twitter.svg" alt="twitter logo" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="/images/icon-pinterest.svg" alt="pinterest logo" />
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="/images/icon-instagram.svg" alt="instagram" />
+          </a>
+        </li>
+      </ul>
+      <ul class="links">
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Careers</a>
+        </li>
+        <li>
+          <a href="#">Events</a>
+        </li>
+        <li>
+          <a href="#">Products</a>
+        </li>
+        <li>
+          <a href="#">Support</a>
+        </li>
+      </ul>
+      <p class="copyright">© 2021 Loopstudios. All rights reserved.</p>
+    </footer>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
